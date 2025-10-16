@@ -5,7 +5,6 @@ import { useAccount } from "wagmi";
 import { ADDR } from "./addresses";
 import { useState } from "react";
 import Balances from "./components/Balances";
-import LandlordFaucet from "./components/LandlordFaucet";
 import PayPanel from "./components/PayPanel";
 import { livpAbi } from "./abi/livp";
 import { registryV2Abi } from "./abi/registryV2";
