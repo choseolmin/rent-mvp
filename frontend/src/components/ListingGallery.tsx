@@ -37,7 +37,7 @@ const fmt = (wei: bigint) => (Number(wei) / 1e18).toLocaleString();
 
 export default function ListingGallery() {
   const [listings, setListings] = useState<Listing[]>([]);
-  const [nextId, setNextId] = useState<number>(0);
+
 
   // nextListingId 조회
   const { data: nextListingId } = useReadContract({
@@ -49,7 +49,7 @@ export default function ListingGallery() {
   useEffect(() => {
     if (!nextListingId) return;
     const n = Number(nextListingId); // 총 발급된 listingId 최대값
-    setNextId(n);
+    
 
     (async () => {
       const { ethers } = await import("ethers");
