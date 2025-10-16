@@ -1,4 +1,4 @@
-import { useAccount, usePublicClient, useReadContract, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
+import { useAccount, usePublicClient, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
 import { useEffect, useState } from "react";
 import { ADDR } from "../addresses";
 import { managerAbi } from "../abi/manager";
